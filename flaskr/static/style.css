@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#052354, #0055ff);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.city-search {
+    margin-top: 5%;
+    padding-left: 2%;
+    background: #fff;
+    border-radius: 50px;
+    width: 90%;
+    height: 3rem;
+    font-size: 36px;
+}
+
+.search-icon {
+    font-size: 32px;
+    border-radius: 50%;
+    background: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.search-button {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    outline: none;
+    position: absolute;
+    top: 48.5%;
+}
+
+.aqi {
+    width: 1rem;
+    height: 1rem;
+}
+
+form {
+    width: auto;
+    height: auto;
+    background: none;
+}
+
+.aqi_check {
+    color: #fff;
+    background: none;
+    font-size: 20px;
+}
+
+.info_display {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: column;
+    padding: 30px 30px 30px 30px;
+    width: 30%;
+    height: 90%;
+    background: #fff;
+    border-radius: 10%;
+}
+
+.info_display>i {
+    font-size: 40px;
+    width: 1rem;
+    height: 1rem;
+    background: none;
+}
+
+.part-cloud {
+    font-size: 10px;
+}

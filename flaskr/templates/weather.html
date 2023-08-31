@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Pacifico&family=Roboto&display=swap"
+        rel="stylesheet">
+    <title> Weather APP | Flask Project </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info_display">
+            <i class="fa-solid fa-city">&nbsp;{{ city }}</i>
+            <!-- <br> -->
+            <i class="fa-solid fa-globe">&nbsp;{{ country }}</i>
+            <i class="fa-solid fa-clock">&nbsp;{{ time }}</i>
+            <i class='fa-solid fa-temperature-three-quarters'>&nbsp;{{ temperature }}&deg;C</i>
+            {{ condition | safe }}
+            <i class="fa-solid fa-wind" style="white-space: nowrap;">&nbsp;{{ wind }} km/h</i>
+            <i class="fa-solid fa-water">&nbsp;{{ humidity }}</i>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/8da1952d27.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
